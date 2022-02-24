@@ -1,0 +1,20 @@
+.navigation > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation > ul > li {
+  list-style: none;
+}
+
+.navigation > ul > li > a {
+  font-size: 25px;
+  margin-left: 50px;
+  color: black;
+  text-decoration: none;
+}
+
+.activeNavLink {
+  padding-bottom: 3px;
+  border-bottom: 3px solid red;
+}
