@@ -5,6 +5,7 @@ import makedonka from "../../../assets/images/makedonka.png";
 import plant from "../../../assets/images/plant.png";
 import som from "../../../assets/images/som.png";
 import sugar from "../../../assets/images/sugar.png";
+import zanov from "../../../assets/images/zanov.png";
 import HomeItem from "../../common/home-item/home-item";
 import clasess from "./home.module.css";
 
@@ -14,10 +15,21 @@ const cvPdf = require("../../../assets/pdfs/cv.pdf");
 const somPdf = require("../../../assets/pdfs/som.pdf");
 const learningPdf = require("../../../assets/pdfs/learning.pdf");
 const sugarPdf = require("../../../assets/pdfs/sugar.pdf");
+const zanovPdf = require("../../../assets/pdfs/zanov-pdf.pdf")
 
 const projectsData = [
   {
     textSide: "left",
+    imagePath: zanov,
+    description: "Zanov Fashion",
+    link: {
+      name: "Project ➔",
+      url: zanovPdf,
+      isOpeningPdf: true,
+    },
+  },
+  {
+    textSide: "right",
     imagePath: som,
     description: "Special Olympics North Macedonia",
     link: {
@@ -27,7 +39,7 @@ const projectsData = [
     },
   },
   {
-    textSide: "right",
+    textSide: "left",
     imagePath: learning,
     description: "Learning UI/UX on the go",
     link: {
@@ -37,7 +49,7 @@ const projectsData = [
     },
   },
   {
-    textSide: "left",
+    textSide: "right",
     imagePath: sugar,
     description: "SugarWish Redesign",
     link: {
@@ -47,7 +59,7 @@ const projectsData = [
     },
   },
   {
-    textSide: "right",
+    textSide: "left",
     imagePath: plant,
     description: "Smart Plant",
     link: {
